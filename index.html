@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sprint 1 - Challenge ONE - Decodificador de Texto</title>
+  <link rel="stylesheet" href="global.css" />
+</head>
+
+<body>
+  <main class="container m-auto">
+    <div class="decode_container">
+      <h1>Challenge ONE - Decodificador de Texto</h1>
+
+      <textarea name="" id="textarea" cols="30" rows="10"
+        placeholder="Digite o texto a ser criptografado ou descriptografado"></textarea>
+      <div id="vazio"></div>
+      <input type="submit" value="Criptografar" id="criptografar" onclick="criptografar()" />
+      <input type="submit" value="Descriptografar" id="descriptografar" onclick="descriptografar()" />
+
+      <h4>&#11015 Saída do texto &#11015</h4>
+      <div class="result-decode" id="result"></div>
+      <input type="submit" value="Copiar texto" id="copy" onclick="copiarTexto()" />
+      <div id="textocopiado"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      Desenvolvido por:
+      <a href="https://github.com/ThiagoSuzuki" target="_blank">Thiago Suzuki</a>
+      Challenge ONE - Decodificador de texto
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

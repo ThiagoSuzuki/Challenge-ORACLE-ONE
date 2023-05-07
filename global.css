@@ -1,0 +1,95 @@
+:root {
+  --white: #f5f5f5;
+  --black: #5e5e5e;
+  --blue: #00a0ff;
+  --darkBlue: #0070f3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(225, 225, 225);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.decode_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  outline: 1px solid green;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  width: 50%;
+  padding: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--darkBlue);
+  color: var(--white);
+}
+
+textarea {
+  resize: none;
+  height: 5vw;
+}
+
+.result-decode {
+  outline: 1px solid blue;
+  height: 100%;
+  text-align: center;
+}
+
+textarea,
+.result-decode {
+  width: 100vh;
+  padding: 10px;
+  display: block;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 0.8em;
+}
+
+/* UTILITÁRIOS*/
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.m-auto {
+  margin: auto;
+}
